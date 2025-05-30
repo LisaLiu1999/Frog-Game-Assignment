@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+.pond {
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    gap: 4px;
+}
+#title {
+    color:rgb(48, 90, 119);
+    font-size:30px;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6eadec;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 5px;
+}
+.lily-pad {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    object-fit: contain;
+    width: 80px;
+    z-index: 1;
+
+}
+.frog {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    z-index: 2;
+
+}
